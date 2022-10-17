@@ -3,22 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo hi'
-            }
-        }
-        stage('Test') {
-            steps {
-                sh 'echo testing'
-            }
-            post {
-                always {
-                    sh 'echo results'
-                }
-            }
-        }
-        stage('Deliver') {
-            steps {
-                sh 'echo sending'
+                sh 'echo Hello from main branch'
             }
         }
     }
